@@ -10,7 +10,7 @@ namespace Exercice_08
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Quel est le rayon r ?");
+            /*Console.WriteLine("Quel est le rayon r ?");
             double r = double.Parse(Console.ReadLine());
 
             double pi = Math.PI;
@@ -18,8 +18,13 @@ namespace Exercice_08
             double surface = Math.Pow(r, 2) * pi;
 
             Console.WriteLine("Le périmetre est " + perimetre);
-            Console.WriteLine("La surface est " + surface);
+            Console.WriteLine("La surface est " + surface); */
 
+            Console.WriteLine("Quel est le rayon r ?");
+            int r = int.Parse(Console.ReadLine());
+            double pi = Math.PI, perimeter = 2 * pi * r, area = Math.Pow(r, 2) * pi;
+            Console.WriteLine("Le périmetre est " + perimeter);
+            Console.WriteLine("La surface est " + area);
         }
     }
 }
